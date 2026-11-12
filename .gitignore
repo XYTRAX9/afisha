@@ -1,0 +1,30 @@
+# Локальная конфигурация и секреты
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+backend/*.db
+
+# Node / Vite
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+
+# Артефакты tsc/vue-tsc рядом с исходниками: Vite резолвит `./api` в api.js раньше api.ts
+# и берёт vite.config.js вместо vite.config.ts, поэтому такие файлы молча подменяют код.
+frontend/src/**/*.js
+frontend/src/**/*.vue.d.ts
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# IDE и ОС
+.idea/
+.vscode/
+.DS_Store

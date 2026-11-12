@@ -7,7 +7,9 @@ from app.config import settings
 from app.models import Base
 
 config = context.config
-config.set_main_option("sqlalchemy.url", settings.database_url)
+# Alembic хранит опции в configparser, где «%» — синтаксис интерполяции. Без экранирования
+# URL с закодированным паролем (p%40ss) падал с ValueError, и миграции не запускались.
+config.set_main_option("sqlalchemy.url", settings.database_url.replace("%", "%%"))
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 target_metadata = Base.metadata

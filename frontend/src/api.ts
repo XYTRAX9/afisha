@@ -1,5 +1,12 @@
 import type { EventItem, EventPayload } from './types/event'
 
+export interface EventFilters {
+  q?: string
+  category?: string
+  date_from?: string
+  date_to?: string
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(path, {
     ...init,
@@ -14,14 +21,16 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   return response.json() as Promise<T>
 }
 
-export function getEvents(params: { q?: string; category?: string; date_from?: string; date_to?: string } = {}) {
+export function getEvents(filters: EventFilters = {}, init?: RequestInit) {
   const query = new URLSearchParams()
-  for (const [key, value] of Object.entries(params)) if (value) query.set(key, value)
-  return request<EventItem[]>(`/api/events${query.size ? `?${query}` : ''}`)
+  for (const [key, value] of Object.entries(filters)) if (value) query.set(key, value)
+  // Не URLSearchParams.size: его нет в Safari < 17, и там фильтры молча не отправлялись бы.
+  const search = query.toString()
+  return request<EventItem[]>(`/api/events${search ? `?${search}` : ''}`, init)
 }
 
-export function getEvent(id: number) {
-  return request<EventItem>(`/api/events/${id}`)
+export function getEvent(id: number, init?: RequestInit) {
+  return request<EventItem>(`/api/events/${id}`, init)
 }
 
 export function createEvent(payload: EventPayload) {
@@ -34,4 +43,8 @@ export function updateEvent(id: number, payload: EventPayload) {
 
 export function deleteEvent(id: number) {
   return request<void>(`/api/events/${id}`, { method: 'DELETE' })
+}
+
+export function isAbortError(error: unknown): boolean {
+  return error instanceof DOMException && error.name === 'AbortError'
 }

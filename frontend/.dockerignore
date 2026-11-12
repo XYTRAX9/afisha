@@ -3,3 +3,10 @@ dist
 .env
 .git
 *.log
+# Артефакты tsc/vue-tsc рядом с исходниками: Vite берёт api.js раньше api.ts
+# и vite.config.js раньше vite.config.ts, поэтому они подменили бы код в образе.
+src/**/*.js
+src/**/*.vue.d.ts
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo

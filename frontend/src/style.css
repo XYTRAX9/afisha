@@ -152,7 +152,7 @@ a {
   height:46px;
   display:flex;
   align-items:center;
-  gap:24px;
+  gap:4px;
   font-size:12px;
   color:#635d58;
   white-space:nowrap;
@@ -160,16 +160,19 @@ a {
   scrollbar-width:none
 }
 .category-nav a {
-  flex:none
+  flex:none;
+  padding:7px 10px;
+  border-radius:999px
 }
-.category-nav a:hover,.category-nav a.router-link-active {
+.category-nav a:hover {
   color:var(--rust)
 }
-.category-nav .all-events {
+.category-nav a.is-active {
   color:var(--rust);
-  background:#f0e9e3;
-  padding:7px 13px;
-  border-radius:999px
+  background:#f0e9e3
+}
+.category-nav .pushkin-pill {
+  margin-left:20px
 }
 .pushkin-pill {
   font-size:10px;
@@ -1076,6 +1079,9 @@ a {
 .full-field {
   grid-column:1/-1
 }
+.form-error {
+  margin:0
+}
 .form-footer {
   display:flex;
   justify-content:flex-end;
@@ -1203,7 +1209,7 @@ a {
   .brand {
     font-size:20px
   }
-  .city-button {
+  .city-label {
     font-size:11px;
     gap:4px
   }
@@ -1231,7 +1237,7 @@ a {
     background:#fff;
     border-radius:999px
   }
-  .category-nav .all-events {
+  .category-nav a.is-active {
     background:#f0e9e3
   }
   .pushkin-pill {
