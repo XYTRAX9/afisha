@@ -107,3 +107,4 @@ cd backend && python -m pytest
 - В карточках есть операции редактирования и удаления, поскольку у MVP нет аккаунтов и ролей.
 # afisha
 # afisha
+# afisha
