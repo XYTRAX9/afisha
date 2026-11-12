@@ -1,4 +1,10 @@
+from zoneinfo import ZoneInfo
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# Афиша городская: дни в фильтрах и даты без смещения трактуются по времени Сургута.
+# В базе даты хранятся в UTC.
+CITY_TZ = ZoneInfo("Asia/Yekaterinburg")
 
 
 class Settings(BaseSettings):

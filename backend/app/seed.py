@@ -1,11 +1,15 @@
-from datetime import datetime, timedelta, timezone
+from collections.abc import Callable
+from datetime import datetime, time, timedelta, timezone
 
-from sqlalchemy import select
+from sqlalchemy import func, select
+from sqlalchemy.orm import Session
 
+from app.config import CITY_TZ
 from app.database import SessionLocal
 from app.models import Event
 
 POSTERS = [f"/events/stitch-{index:02d}.jpg" for index in range(1, 9)]
+EVENING = time(19, 0)
 
 EVENTS = [
     ("Симфония тайги: Шедевры Рахманинова", "Концерт", "Большой симфонический вечер в исполнении оркестра Сургутской филармонии.", "Сургутская филармония", 1200, "6+"),
@@ -19,25 +23,34 @@ EVENTS = [
 ]
 
 
-def seed() -> None:
-    with SessionLocal() as db:
+def seed(session_factory: Callable[[], Session] = SessionLocal) -> int:
+    """Загружает демо-события, только если таблица пуста. Возвращает число добавленных событий.
+
+    Раньше недостающие события досоздавались по названию при каждом старте контейнера,
+    и удалённые или переименованные пользователем демо-события возвращались после рестарта.
+    """
+    with session_factory() as db:
+        if db.scalar(select(func.count()).select_from(Event)):
+            return 0
+        today = datetime.now(CITY_TZ).date()
         for index, (title, category, description, venue, price, age_limit) in enumerate(EVENTS):
-            exists = db.scalar(select(Event.id).where(Event.title == title))
-            if exists:
-                continue
+            # Вечерний сеанс в 19:00 по Сургуту через 3, 5, 7… дней (а не «сейчас + 19 часов»).
+            starts_at = datetime.combine(today + timedelta(days=3 + index * 2), EVENING, tzinfo=CITY_TZ)
             db.add(Event(
                 title=title,
                 category=category,
                 description=description,
                 venue=venue,
                 address="Сургут, ХМАО-Югра",
-                starts_at=datetime.now(timezone.utc) + timedelta(days=3 + index * 2, hours=19),
+                starts_at=starts_at.astimezone(timezone.utc),
                 price=price,
                 image_url=POSTERS[index],
                 age_limit=age_limit,
             ))
         db.commit()
+        return len(EVENTS)
 
 
 if __name__ == "__main__":
-    seed()
+    added = seed()
+    print(f"Демоданные: добавлено событий — {added}." if added else "Демоданные: в базе уже есть события, загрузка пропущена.")
