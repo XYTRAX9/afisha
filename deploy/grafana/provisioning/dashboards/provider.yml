@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: Afisha
+    orgId: 1
+    folder: Афиша
+    type: file
+    disableDeletion: true
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards

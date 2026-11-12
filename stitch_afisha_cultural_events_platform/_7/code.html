@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#dbc1bb","surface-variant":"#e4e2de","on-background":"#1b1c1a","on-surface-variant":"#55423f","surface-tint":"#994533","secondary-container":"#e4e2e1","on-secondary":"#ffffff","on-error-container":"#93000a","surface-container-highest":"#e4e2de","on-primary-fixed-variant":"#7b2e1e","inverse-primary":"#ffb4a5","inverse-on-surface":"#f2f0ec","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#c8c6c5","surface-dim":"#dbdad6","on-secondary-container":"#656464","surface":"#fbf9f5","surface-container":"#efeeea","tertiary-container":"#2eab92","tertiary-fixed-dim":"#66dabf","primary-container":"#e27d68","on-primary-container":"#5e190b","tertiary-fixed":"#84f7da","primary-fixed":"#ffdad3","secondary":"#5f5e5e","on-secondary-fixed":"#1b1c1c","primary":"#994533","surface-bright":"#fbf9f5","secondary-fixed":"#e4e2e1","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005143","surface-container-low":"#f5f3ef","on-tertiary-container":"#00382e","on-tertiary":"#ffffff","surface-container-high":"#eae8e4","tertiary":"#006b59","error":"#ba1a1a","on-tertiary-fixed":"#00201a","on-error":"#ffffff","on-primary":"#ffffff","outline":"#88726e","inverse-surface":"#30312e","on-surface":"#1b1c1a","on-secondary-fixed-variant":"#474746","primary-fixed-dim":"#ffb4a5","background":"#fbf9f5","on-primary-fixed":"#3e0500"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.25rem","margin-desktop":"3rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"1rem","margin-tablet":"2rem","space-md":"1rem","space-xl":"2.5rem","gutter-desktop":"2rem"},"fontFamily":{"headline-lg":["Manrope"],"display-hero-mobile":["Manrope"],"body-lg":["Manrope"],"headline-md":["Manrope"],"headline-lg-mobile":["Manrope"],"body-sm":["Manrope"],"label-md":["Manrope"],"label-caps":["Manrope"],"label-lg":["Manrope"],"headline-sm":["Manrope"],"display-hero":["Manrope"],"body-md":["Manrope"]},"fontSize":{"headline-lg":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["17px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-surface-variant"><div class="h-20 max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="events-catalog" href="#"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">АФИША</span></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><button class="hidden sm:flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-label-lg text-label-lg">Сургут</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b-2 border-primary pb-1 -mb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-catalog" href="#">Все события</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="theater" href="#">Театр</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="concerts" href="#">Концерты</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cinema" href="#">Кино</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="exhibitions" href="#">Выставки</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids" href="#">Детям</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Поиск событий" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Избранное" class="relative w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" data-path="favorites" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></a><a class="flex items-center gap-space-sm pl-space-xs py-space-xs pr-space-sm rounded-lg hover:bg-surface-container transition-colors group" data-path="profile" href="#"><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary group-hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">person</span></span><span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors hidden xl:inline">Войти</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop py-space-md">
+<nav aria-label="Хлебные крошки" class="flex items-center gap-space-xs font-body-sm text-body-sm text-secondary mb-space-lg">
+<a class="hover:text-primary transition-colors" href="#">Главная</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Концерты</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-medium truncate">Фестиваль «Северный звук»</span>
+</nav>
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-high mb-space-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
+<div class="lg:col-span-7 p-space-lg sm:p-space-xl flex flex-col justify-between z-10">
+<div class="space-y-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider">
+                Входной билет без мест
+              </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                Танцпол &amp; Лаунж
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+                Пушкинская карта
+              </span>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                Музыкальный фестиваль «Северный звук»
+                <span class="inline-block text-primary font-label-caps text-label-caps align-top ml-1 px-1.5 py-0.5 rounded bg-surface-container-highest">16+</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+                Главный инди- и электронный смотр Югры. Девять часов живого звука, аудиовизуальные инсталляции, арт-маркет и ночной чиллаут в индустриальных интерьерах культурного центра.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg mt-space-md space-y-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Дата и время</span>
+<span class="font-headline-sm text-[16px] leading-[22px] text-on-surface mt-0.5">15 ноября, 19:00</span>
+<span class="font-body-sm text-body-sm text-secondary">Двери с 18:00</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Локация</span>
+<span class="font-headline-sm text-[16px] leading-[22px] text-on-surface mt-0.5 truncate">КЦ «Порт»</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">ул. Майская, 10</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Формат зала</span>
+<span class="font-headline-sm text-[16px] leading-[22px] text-on-surface mt-0.5">Free Admission</span>
+<span class="font-body-sm text-body-sm text-secondary">Танцпол + свободная рассадка</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" id="favBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" id="favIcon">bookmark</span>
+<span id="favText">В избранное</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" id="shareBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Поделиться</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-2 font-label-md text-label-md text-secondary">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Осталось 140 билетов</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Atmospheric indie and electronic live music performance at Port Cultural Center Surgut, dramatic stage lighting in deep coral and warm amber, energetic crowd dancing, industrial brutalist warehouse venue vibes, high resolution concert documentary photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTSX3Kt9jT_7hYqPE-19wKxDQYywUCMeF5rt2dkHZPnpE0gae2Oh-lyhSOZ4uCcm6gvw-ULRGP6BtpPkCOQ49TirRbTzJ_hfBNBA-GBll6txmMbM6oesIA0HA13KvrlUtWeCjy2DZz11LU0gPCfCdGzfne1JlbVYHOYPm0CRswdkmok0SNDQhSY4rINRzUVtNjYhKfzNczMGDSQ_DC2E_X-lUcoO6jf8GGmXvk-sQcxz_j0WrukuNE4Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-surface-container-high via-transparent to-transparent opacity-90 lg:opacity-75"></div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-caps text-label-caps text-on-surface">
+            КЦ «ПОРТ» / ГЛАВНЫЙ АНФИЛАДНЫЙ ЦЕХ
+          </div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start mb-space-xl">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Выбор входных билетов</h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Мероприятие без нумерованных кресел. Выберите нужные категории и количество гостей.</p>
+</div>
+<span class="hidden md:inline-flex items-center gap-1 font-label-caps text-label-caps text-primary uppercase">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+            Моментальный e-ticket
+          </span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md group hover:bg-surface-container-low transition-colors" data-category-id="dance">
+<div class="space-y-1.5 max-w-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Входной (Танцпол &amp; Основная сцена)</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-secondary">Хит</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+              Доступ во все открытые залы фестиваля, свободный доступ к танцполу и барной зоне. Свободные посадочные места в кафе и чиллауте при наличии.
+            </p>
+<div class="flex items-center gap-space-sm pt-1 text-secondary font-label-md text-label-md">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">timer</span> Вход с 18:00</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">credit_card</span> Пушкинская карта</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:flex-col md:items-end gap-space-sm pt-space-xs md:pt-0 shrink-0">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-on-surface tabular-nums">1 200 ₽</div>
+<span class="font-body-sm text-body-sm text-secondary">за 1 билет</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button aria-label="Уменьшить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors disabled:opacity-30" data-action="dec" data-id="dance" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-sm text-[16px] text-on-surface tabular-nums qty-count" id="count-dance">1</span>
+<button aria-label="Увеличить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors" data-action="inc" data-id="dance" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md group hover:bg-surface-container-low transition-colors" data-category-id="fan">
+<div class="space-y-1.5 max-w-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Фан-зона (Первые ряды у сцены)</h3>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps">Priority</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+              Приоритетный ранний вход в 17:30, доступ в выделенный огороженный сектор прямо у сцены, памятный фестивальный текстильный браслет.
+            </p>
+<div class="flex items-center gap-space-sm pt-1 text-secondary font-label-md text-label-md">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">bolt</span> Ранний вход 17:30</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">loyalty</span> Сувенир на входе</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:flex-col md:items-end gap-space-sm pt-space-xs md:pt-0 shrink-0">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-on-surface tabular-nums">1 800 ₽</div>
+<span class="font-body-sm text-body-sm text-secondary">за 1 билет</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button aria-label="Уменьшить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors disabled:opacity-30" data-action="dec" data-id="fan" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-sm text-[16px] text-on-surface tabular-nums qty-count" id="count-fan">0</span>
+<button aria-label="Увеличить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors" data-action="inc" data-id="fan" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md group hover:bg-surface-container-low transition-colors" data-category-id="vip">
+<div class="space-y-1.5 max-w-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">VIP Lounge (Балкон со свободной рассадкой)</h3>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">Премиум</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+              Отдельный вход без очередей, доступ на второй уровень с панорамным обзором сцены, мягкие кожаные диваны и столики (свободная рассадка), бокал игристого или лимонад.
+            </p>
+<div class="flex items-center gap-space-sm pt-1 text-secondary font-label-md text-label-md">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">wine_bar</span> Welcome Drink</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">meeting_room</span> Отдельный гардероб</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:flex-col md:items-end gap-space-sm pt-space-xs md:pt-0 shrink-0">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-on-surface tabular-nums">3 000 ₽</div>
+<span class="font-body-sm text-body-sm text-secondary">за 1 билет</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button aria-label="Уменьшить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors disabled:opacity-30" data-action="dec" data-id="vip" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-sm text-[16px] text-on-surface tabular-nums qty-count" id="count-vip">1</span>
+<button aria-label="Увеличить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors" data-action="inc" data-id="vip" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md group hover:bg-surface-container-low transition-colors" data-category-id="group">
+<div class="space-y-1.5 max-w-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Групповой билет (от 3-х человек)</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-primary">-20% Скидка</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+              Выгодный тариф для компаний и студенческих комьюнити. Свободный доступ во все зоны партера и танцпола.
+            </p>
+<div class="flex items-center gap-space-sm pt-1 text-secondary font-label-md text-label-md">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">group</span> Минимальный заказ: 3 билета</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:flex-col md:items-end gap-space-sm pt-space-xs md:pt-0 shrink-0">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-on-surface tabular-nums">950 ₽</div>
+<span class="font-body-sm text-body-sm text-secondary">за 1 гостя</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button aria-label="Уменьшить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors disabled:opacity-30" data-action="dec" data-id="group" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-sm text-[16px] text-on-surface tabular-nums qty-count" id="count-group">0</span>
+<button aria-label="Увеличить" class="qty-btn w-9 h-9 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface flex items-center justify-center transition-colors" data-action="inc" data-id="group" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">info</span>
+<div class="font-body-sm text-body-sm text-secondary">
+<strong class="text-on-surface font-semibold">Важное уведомление о формате:</strong> На этом фестивале отсутствуют фиксированные кресла и ряды. Вы получаете право свободного входа и перемещения по всем пространствам выбранного билета. Столики в кофейне и лаунж-зоне занимаются в порядке живой очереди.
+          </div>
+</div>
+</div>
+<div class="lg:col-span-4 sticky top-24">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ваш заказ</h3>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container text-secondary" id="totalSummaryBadge">2 билета</span>
+</div>
+<div class="space-y-space-sm" id="cartItemsList">
+<div class="flex items-center justify-between text-body-md font-body-md" id="item-dance">
+<div class="flex flex-col">
+<span class="text-on-surface">Входной (Танцпол)</span>
+<span class="text-body-sm font-body-sm text-secondary" id="sub-dance">1 × 1 200 ₽</span>
+</div>
+<span class="font-medium text-on-surface tabular-nums" id="sum-dance">1 200 ₽</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md" id="item-vip">
+<div class="flex flex-col">
+<span class="text-on-surface">VIP Lounge (Балкон)</span>
+<span class="text-body-sm font-body-sm text-secondary" id="sub-vip">1 × 3 000 ₽</span>
+</div>
+<span class="font-medium text-on-surface tabular-nums" id="sum-vip">3 000 ₽</span>
+</div>
+<div class="hidden items-center justify-between text-body-md font-body-md" id="item-fan">
+<div class="flex flex-col">
+<span class="text-on-surface">Фан-зона</span>
+<span class="text-body-sm font-body-sm text-secondary" id="sub-fan">0 × 1 800 ₽</span>
+</div>
+<span class="font-medium text-on-surface tabular-nums" id="sum-fan">0 ₽</span>
+</div>
+<div class="hidden items-center justify-between text-body-md font-body-md" id="item-group">
+<div class="flex flex-col">
+<span class="text-on-surface">Групповой</span>
+<span class="text-body-sm font-body-sm text-secondary" id="sub-group">0 × 950 ₽</span>
+</div>
+<span class="font-medium text-on-surface tabular-nums" id="sum-group">0 ₽</span>
+</div>
+</div>
+<div class="pt-space-sm space-y-space-sm">
+<label class="flex items-center justify-between cursor-pointer p-space-xs rounded-lg hover:bg-surface-container transition-colors">
+<span class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">account_balance</span>
+                Оплата Пушкинской картой
+              </span>
+<input class="w-4 h-4 accent-primary rounded cursor-pointer" id="pushkinToggle" type="checkbox"/>
+</label>
+<div class="flex gap-2">
+<input class="w-full bg-surface-container px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-on-surface placeholder:text-secondary" id="promoInput" placeholder="Промокод" type="text"/>
+<button class="px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-colors" id="applyPromoBtn" type="button">
+                Применить
+              </button>
+</div>
+</div>
+<div class="pt-space-sm space-y-1">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-on-surface">Итого к оплате</span>
+<span class="font-headline-lg text-headline-lg text-primary tabular-nums" id="cartTotalPrice">4 200 ₽</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-secondary">
+<span>Сервисный сбор</span>
+<span>0 ₽ (0%)</span>
+</div>
+</div>
+<button class="w-full py-3.5 px-6 rounded-lg bg-primary-container hover:bg-[#cf6853] text-on-primary font-headline-sm text-[16px] flex items-center justify-center gap-2 transition-all shadow-md active:scale-[0.99]" id="checkoutBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span id="checkoutLabel">Купить 2 билета</span>
+</button>
+<div class="p-space-xs rounded bg-surface-container text-center text-secondary font-label-md text-label-md">
+            Билеты придут на e-mail сразу после подтверждения оплаты
+          </div>
+</div>
+</div>
+</div>
+<section class="mb-space-xl">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Зонирование пространства КЦ «Порт»</h2>
+<p class="font-body-md text-body-md text-secondary">Индустриальная планировка с двумя ярусами, арт-маркетом и несколькими зонами отдыха</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 bg-surface-container rounded-lg p-space-md sm:p-space-lg relative overflow-hidden">
+<svg class="w-full h-auto text-on-surface select-none" viewbox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#eae8e4" height="460" rx="8" width="780" x="10" y="10"></rect>
+<rect fill="#994533" height="80" rx="6" width="300" x="250" y="30"></rect>
+<text fill="#ffffff" font-family="Manrope" font-size="16" font-weight="700" text-anchor="middle" x="400" y="75">ГЛАВНАЯ СЦЕНА (MAIN STAGE)</text>
+<text fill="#ffdad3" font-family="Manrope" font-size="11" text-anchor="middle" x="400" y="95">LED ЭКРАН + СВЕТОВОЕ ШОУ</text>
+<rect fill="#2eab92" fill-opacity="0.15" height="70" rx="6" stroke="currentColor" stroke-dasharray="4" width="360" x="220" y="130"></rect>
+<text fill="#00382e" font-family="Manrope" font-size="13" font-weight="600" text-anchor="middle" x="400" y="170">ФАН-ЗОНА (ПРИОРИТЕТНЫЙ ДОСТУП)</text>
+<rect fill="#fbf9f5" height="150" rx="6" width="480" x="160" y="220"></rect>
+<text fill="#1b1c1a" font-family="Manrope" font-size="15" font-weight="700" text-anchor="middle" x="400" y="295">ОСНОВНОЙ ТАНЦПОЛ (DANCE FLOOR)</text>
+<text fill="#5f5e5e" font-family="Manrope" font-size="12" text-anchor="middle" x="400" y="318">Свободный вход по всем категориям билетов</text>
+<rect fill="#e27d68" fill-opacity="0.2" height="230" rx="6" width="100" x="30" y="140"></rect>
+<text fill="#5e190b" font-family="Manrope" font-size="13" font-weight="600" text-anchor="middle" transform="rotate(-90 80 245)" x="80" y="245">БАР &amp; НАПИТКИ</text>
+<rect fill="#e4e2de" height="230" rx="6" width="100" x="670" y="140"></rect>
+<text fill="#1b1c1a" font-family="Manrope" font-size="13" font-weight="600" text-anchor="middle" transform="rotate(90 720 245)" x="720" y="245">АРТ-МАРКЕТ И МЕРЧ</text>
+<rect fill="#ffb4a5" fill-opacity="0.3" height="80" rx="6" width="160" x="30" y="30"></rect>
+<text fill="#7b2e1e" font-family="Manrope" font-size="12" font-weight="700" text-anchor="middle" x="110" y="65">VIP БАЛКОН (2 ЭТАЖ)</text>
+<text fill="#7b2e1e" font-family="Manrope" font-size="10" text-anchor="middle" x="110" y="85">Мягкая зона отдыха</text>
+<rect fill="#f5f3ef" height="80" rx="6" width="160" x="610" y="30"></rect>
+<text fill="#55423f" font-family="Manrope" font-size="12" font-weight="600" text-anchor="middle" x="690" y="65">CHILLOUT &amp; КАФЕ</text>
+<text fill="#55423f" font-family="Manrope" font-size="10" text-anchor="middle" x="690" y="85">Свободная посадка</text>
+<rect fill="#30312e" height="50" rx="6" width="240" x="280" y="400"></rect>
+<text fill="#f2f0ec" font-family="Manrope" font-size="12" font-weight="600" text-anchor="middle" x="400" y="430">ГЛАВНЫЙ ВХОД &amp; ГАРДЕРОБ</text>
+</svg>
+</div>
+<div class="lg:col-span-4 space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">Архитектура локации</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Индустриальная сцена без барьеров</h3>
+<p class="font-body-md text-body-md text-secondary">
+                Зрители могут свободно перемещаться между танцполом, маркетом локальных брендов и зоной фудкорта.
+              </p>
+</div>
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container">
+<span class="w-3 h-3 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface font-medium">Главная сцена:</span>
+<span class="text-secondary">мощный линейный массив 25 кВт</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container">
+<span class="w-3 h-3 rounded-full bg-tertiary-container shrink-0"></span>
+<span class="text-on-surface font-medium">Фан-зона:</span>
+<span class="text-secondary">первые 8 метров перед подиумом</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container">
+<span class="w-3 h-3 rounded-full bg-primary-container shrink-0"></span>
+<span class="text-on-surface font-medium">VIP Балкон:</span>
+<span class="text-secondary">второй ярус с диванами и барменом</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container">
+<span class="w-3 h-3 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface font-medium">Чиллаут:</span>
+<span class="text-secondary">тихая зона для отдыха и разговоров</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+<div class="lg:col-span-7 space-y-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Лайн-ап и расписание фестиваля</h2>
+<p class="font-body-md text-body-md text-secondary">Тайминг живых выступлений и диджей-сетов на 15 ноября</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-primary tabular-nums w-16 shrink-0">18:00</span>
+<div class="space-y-0.5">
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold">Открытие дверей фестиваля &amp; Welcoming</h4>
+<p class="font-body-sm text-body-sm text-secondary">Запуск гостей, работа гардероба, открытие арт-маркета сибирских дизайнеров, диджей-селекция на виниле в баре.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-primary tabular-nums w-16 shrink-0">19:00</span>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold">«Тайга Дримс» (Сургут)</h4>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-secondary">Indie Rock</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Презентация нового EP с меланхоличным гитарным звучанием и поэтичными текстами о Севере.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-primary tabular-nums w-16 shrink-0">20:30</span>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold">Электронный лайв: «Yugra Modular»</h4>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps">Live Synth</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Модульный синтез в реальном времени под генеративную визуализацию медиахудожников Тюмени и Сургута.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-high/50 transition-colors">
+<span class="font-headline-sm text-headline-sm text-primary tabular-nums w-16 shrink-0">22:00</span>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold">Хедлайнер: «Сияние» (Санкт-Петербург)</h4>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-caps text-label-caps">Headliner</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Большой полуторачасовой сет флагманов отечественной пост-поп сцены со специальной расширенной программой.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-secondary tabular-nums w-16 shrink-0">23:30</span>
+<div class="space-y-0.5">
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold">Night Afterparty &amp; Ambient Lounge</h4>
+<p class="font-body-sm text-body-sm text-secondary">Мягкое завершение вечера для держателей VIP-категорий и гостей фестиваля в арт-кафе.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Правила и комфорт</h2>
+<p class="font-body-md text-body-md text-secondary">Все, что нужно знать перед визитом</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-sm space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">chair</span>
+<div>
+<h5 class="font-headline-sm text-[15px] text-on-surface font-semibold">Свободная посадка</h5>
+<p class="font-body-sm text-body-sm text-secondary">В зонах чиллаута и кафе нет бронирования столиков. Гости размещаются на свободных местах в любой момент вечера.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">lock</span>
+<div>
+<h5 class="font-headline-sm text-[15px] text-on-surface font-semibold">Гардероб и камера хранения</h5>
+<p class="font-body-sm text-body-sm text-secondary">Бесплатный гардероб на первом этаже рассчитан на 500 гостей. Крупногабаритные рюкзаки сдаются в ячейки хранения.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">badge</span>
+<div>
+<h5 class="font-headline-sm text-[15px] text-on-surface font-semibold">Возрастной контроль 16+</h5>
+<p class="font-body-sm text-body-sm text-secondary">Пожалуйста, имейте при себе оригинал паспорта или цифровой профиль на Госуслугах при получении контрольного браслета.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">contactless</span>
+<div>
+<h5 class="font-headline-sm text-[15px] text-on-surface font-semibold">Безналичная оплата</h5>
+<p class="font-body-sm text-body-sm text-secondary">На всех барах и в арт-маркете действует безналичный расчет (карты МИР, СБП, QR-коды банков).</p>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div>
+<div class="font-label-caps text-label-caps text-secondary uppercase">Организатор</div>
+<div class="font-headline-sm text-[15px] text-on-surface">Культурный Центр «Порт»</div>
+<div class="font-body-sm text-body-sm text-secondary">ИНН 8602184910 • Тел. +7 (3462) 24-25-62</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+            Вопрос
+          </button>
+</div>
+</div>
+</div>
+<section class="mb-space-xl">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">О площадке КЦ «Порт»</h2>
+<p class="font-body-md text-body-md text-secondary">Сургут, ул. Майская, 10 — мультидисциплинарный арт-кластер в историческом центре</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-stretch">
+<div class="lg:col-span-7 rounded-xl overflow-hidden shadow-sm relative min-h-[300px]">
+<div class="w-full h-full min-h-[320px] bg-cover bg-center" data-alt="The modern industrial interior of cultural center Port in Surgut, exposed brick, high ceiling truss structure, ambient warm architectural lights, contemporary art exhibitions on walls, welcoming hipster lounge atmosphere, architectural photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_nsN05Zcp44rhkHyg9T0iYwJruut0aCZEvFd0liqlew7dbxV-9gzMIP4xxETm3OZ1QQ-ChDvIBqN82b_i_cImb3Cp35CUF61NpSJ2cy--FX4RhOngWRgSfXUnvZoRzsaCZhlIKZfWT2usgsGnMtBIbE8Q-G-VcDz2cTi_sKGxYmvAdcCQTGCmafOIqw5IMtmXDpGXNqOTjGwMz2DxERRZPa9ZMTU-D1IRuS2jm3-s2mRm9g1GiOl2ww')"></div>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface">
+            Главный зал КЦ «Порт» (вместимость 450 гостей)
+          </div>
+</div>
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<span class="font-label-caps text-label-caps text-primary uppercase">Как добраться</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Центральный культурный кластер</h3>
+<p class="font-body-md text-body-md text-secondary">
+              КЦ «Порт» расположен в 5 минутах пешком от остановок «Аврора» и «Майская». 
+              Рядом доступна бесплатная муниципальная парковка на 60 автомобилей со стороны улицы Майской.
+            </p>
+<div class="space-y-1 text-body-sm font-body-sm text-on-surface pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">directions_bus</span>
+<span>Автобусы: №3, №5, №11, №45</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">local_parking</span>
+<span>Паркинг: открытый у здания культурного центра</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<div class="w-full h-44 bg-surface-container rounded-lg bg-cover bg-center shadow-inner flex items-center justify-center relative overflow-hidden" data-location="Surgut, Mayskaya street 10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7lNAZhMdw0vuP4tFvky4v1S3WhnKPGH0IDnx9diSJT7fCLVcMOwTygxXh3F427mMv7Zvvcc4YrDLqhf_99xk3hUgpA4Vi-omgSoJ-G1l4w33PglUaZbOoa4oyX0BPHEJVuM3xDquKHLFlobDphMwa4nNcKVlse-A2I5eA9oH-9IoTFJ4GfZrsDPVQNzT0YlJW32YwMs-kZhdv57dy8wcNFlzuLYQKU_MYUlHRM5NDPNAPsoYj8rfnhQ')">
+<div class="bg-surface-container-lowest/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">pin_drop</span>
+<span class="font-label-lg text-label-lg">ул. Майская, 10 • КЦ «Порт»</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function() {
+    const prices = {
+      dance: 1200,
+      fan: 1800,
+      vip: 3000,
+      group: 950
+    };
+
+    const counts = {
+      dance: 1,
+      fan: 0,
+      vip: 1,
+      group: 0
+    };
+
+    let discountActive = false;
+
+    const totalEl = document.getElementById('cartTotalPrice');
+    const labelEl = document.getElementById('checkoutLabel');
+    const badgeEl = document.getElementById('totalSummaryBadge');
+    const pushkinToggle = document.getElementById('pushkinToggle');
+    const promoBtn = document.getElementById('applyPromoBtn');
+    const promoInput = document.getElementById('promoInput');
+    const favBtn = document.getElementById('favBtn');
+    const favText = document.getElementById('favText');
+    const favIcon = document.getElementById('favIcon');
+    let isFav = false;
+
+    function formatNumber(num) {
+      return num.toLocaleString('ru-RU') + ' ₽';
+    }
+
+    function pluralTickets(n) {
+      if (n % 10 === 1 && n % 100 !== 11) return n + ' билет';
+      if ([2,3,4].includes(n % 10) && ![12,13,14].includes(n % 100)) return n + ' билета';
+      return n + ' билетов';
+    }
+
+    function updateCart() {
+      let totalCount = 0;
+      let rawSum = 0;
+
+      for (const [id, count] of Object.entries(counts)) {
+        totalCount += count;
+        rawSum += count * prices[id];
+
+        const countEl = document.getElementById(`count-${id}`);
+        if (countEl) countEl.textContent = count;
+
+        const decBtn = document.querySelector(`.qty-btn[data-action="dec"][data-id="${id}"]`);
+        if (decBtn) {
+          decBtn.disabled = count <= 0;
+        }
+
+        const cartRow = document.getElementById(`item-${id}`);
+        const subRow = document.getElementById(`sub-${id}`);
+        const sumRow = document.getElementById(`sum-${id}`);
+
+        if (cartRow) {
+          if (count > 0) {
+            cartRow.classList.remove('hidden');
+            cartRow.classList.add('flex');
+            if (subRow) subRow.textContent = `${count} × ${formatNumber(prices[id])}`;
+            if (sumRow) sumRow.textContent = formatNumber(count * prices[id]);
+          } else {
+            cartRow.classList.add('hidden');
+            cartRow.classList.remove('flex');
+          }
+        }
+      }
+
+      if (discountActive) {
+        rawSum = Math.round(rawSum * 0.9);
+      }
+
+      if (totalEl) totalEl.textContent = formatNumber(rawSum);
+      if (badgeEl) badgeEl.textContent = pluralTickets(totalCount);
+      if (labelEl) {
+        labelEl.textContent = totalCount > 0 ? `Купить ${pluralTickets(totalCount)}` : 'Выберите билеты';
+      }
+
+      const checkoutBtn = document.getElementById('checkoutBtn');
+      if (checkoutBtn) {
+        checkoutBtn.disabled = totalCount === 0;
+        checkoutBtn.style.opacity = totalCount === 0 ? '0.5' : '1';
+      }
+    }
+
+    document.querySelectorAll('.qty-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id');
+        const action = btn.getAttribute('data-action');
+        if (!id || !counts.hasOwnProperty(id)) return;
+
+        if (action === 'inc') {
+          if (id === 'group' && counts[id] === 0) {
+            counts[id] = 3;
+          } else {
+            counts[id] += 1;
+          }
+        } else if (action === 'dec') {
+          if (id === 'group' && counts[id] <= 3) {
+            counts[id] = 0;
+          } else {
+            counts[id] = Math.max(0, counts[id] - 1);
+          }
+        }
+        updateCart();
+      });
+    });
+
+    if (promoBtn && promoInput) {
+      promoBtn.addEventListener('click', () => {
+        const val = promoInput.value.trim().toUpperCase();
+        if (val === 'SEVER24' || val === 'PORT') {
+          discountActive = true;
+          promoBtn.textContent = 'Применен (-10%)';
+          promoBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+          updateCart();
+        } else if (val) {
+          alert('Промокод не найден или истек срок действия. Попробуйте SEVER24');
+        }
+      });
+    }
+
+    if (favBtn) {
+      favBtn.addEventListener('click', () => {
+        isFav = !isFav;
+        if (isFav) {
+          favText.textContent = 'В избранном';
+          favIcon.style.fontVariationSettings = "'FILL' 1";
+        } else {
+          favText.textContent = 'В избранное';
+          favIcon.style.fontVariationSettings = "'FILL' 0";
+        }
+      });
+    }
+
+    const shareBtn = document.getElementById('shareBtn');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Фестиваль «Северный звук» в Сургуте',
+            url: window.location.href
+          }).catch(() => {});
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          alert('Ссылка на событие скопирована в буфер обмена!');
+        }
+      });
+    }
+
+    updateCart();
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant pt-space-xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col justify-between pr-gutter-desktop"><div class="space-y-space-sm"><div class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight">АФИША</div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Культурный гид и удобный сервис бронирования билетов на главные события в Сургуте.</p></div><div class="mt-space-lg"><div class="inline-flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span><span class="font-label-md text-label-md uppercase tracking-wider">Сургут, ХМАО-Югра</span></div></div></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Категории</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="theater" href="#">Театр и опера</a></li><li><a class="hover:text-primary transition-colors" data-path="concerts" href="#">Концерты и музыка</a></li><li><a class="hover:text-primary transition-colors" data-path="cinema" href="#">Премьеры кино</a></li><li><a class="hover:text-primary transition-colors" data-path="exhibitions" href="#">Музеи и выставки</a></li><li><a class="hover:text-primary transition-colors" data-path="kids" href="#">Детские программы</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">О проекте</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">О сервисе</a></li><li><a class="hover:text-primary transition-colors" data-path="venues" href="#">Площадки и залы</a></li><li><a class="hover:text-primary transition-colors" data-path="editorial" href="#">Журнал редакции</a></li><li><a class="hover:text-primary transition-colors" data-path="contacts" href="#">Контакты</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Помощь &amp; Партнерам</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="organizers" href="#">Организаторам</a></li><li><a class="hover:text-primary transition-colors" data-path="ticket-refund" href="#">Возврат билетов</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="#">Частые вопросы</a></li><li><a class="hover:text-primary transition-colors" data-path="terms" href="#">Правила сервиса</a></li></ul></div></div><div class="pt-space-lg border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 АФИША. Сервис бронирования билетов на культурные события в Сургуте.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Конфиденциальность</a><a class="hover:text-on-surface transition-colors" data-path="user-agreement" href="#">Пользовательское соглашение</a></div></div></div></footer></body></html>

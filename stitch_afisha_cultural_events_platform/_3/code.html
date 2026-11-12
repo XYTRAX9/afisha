@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#1b1c1a","on-primary-fixed":"#3e0500","inverse-primary":"#ffb4a5","on-primary":"#ffffff","surface":"#fbf9f5","outline":"#88726e","primary":"#994533","tertiary-fixed":"#84f7da","secondary-container":"#e4e2e1","on-surface-variant":"#55423f","on-tertiary":"#ffffff","error":"#ba1a1a","primary-fixed":"#ffdad3","on-primary-fixed-variant":"#7b2e1e","on-tertiary-fixed-variant":"#005143","on-secondary-fixed":"#1b1c1c","secondary-fixed":"#e4e2e1","on-secondary-fixed-variant":"#474746","on-tertiary-fixed":"#00201a","surface-container-low":"#f5f3ef","primary-fixed-dim":"#ffb4a5","surface-variant":"#e4e2de","inverse-surface":"#30312e","background":"#fbf9f5","on-primary-container":"#5e190b","secondary":"#5f5e5e","on-tertiary-container":"#00382e","primary-container":"#e27d68","tertiary":"#006b59","surface-container-highest":"#e4e2de","outline-variant":"#dbc1bb","secondary-fixed-dim":"#c8c6c5","surface-container-high":"#eae8e4","surface-container":"#efeeea","inverse-on-surface":"#f2f0ec","tertiary-fixed-dim":"#66dabf","surface-dim":"#dbdad6","error-container":"#ffdad6","on-surface":"#1b1c1a","on-secondary-container":"#656464","on-secondary":"#ffffff","surface-tint":"#994533","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary-container":"#2eab92","surface-bright":"#fbf9f5","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"3rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-desktop":"2rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-tablet":"2rem","gutter":"1.25rem","margin":"1rem"},"fontFamily":{"body-lg":["Manrope"],"headline-lg":["Manrope"],"label-md":["Manrope"],"body-md":["Manrope"],"headline-md":["Manrope"],"body-sm":["Manrope"],"display-hero":["Manrope"],"label-caps":["Manrope"],"display-hero-mobile":["Manrope"],"label-lg":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-sm":["Manrope"]},"fontSize":{"body-lg":["17px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-variant"><div class="h-20 max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="events-catalog" href="#"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">АФИША</span></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><button class="hidden sm:flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-label-lg text-label-lg">Сургут</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-catalog" href="#">События</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="theater" href="#">Театр</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="concerts" href="#">Концерты</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cinema" href="#">Кино</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="exhibitions" href="#">Выставки</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids" href="#">Детям</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Поиск событий" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Избранное" class="relative w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" data-path="favorites" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></a><a class="flex items-center gap-space-sm pl-space-xs py-space-xs pr-space-sm rounded-lg hover:bg-surface-container transition-colors group" data-path="profile" href="#"><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary group-hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">person</span></span><span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors hidden xl:inline">Войти</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Nav Indicator Script: Marks "Детям" as active in header shell -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll('header nav a');
+      links.forEach(l => {
+        if (l.getAttribute('data-path') === 'kids') {
+          l.classList.remove('text-on-surface-variant');
+          l.classList.add('text-primary', 'font-semibold', 'relative');
+          const dot = document.createElement('span');
+          dot.className = 'absolute -bottom-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary-container';
+          l.appendChild(dot);
+        }
+      });
+    });
+  </script>
+<!-- Section 1: Section Header & Editorial Masthead -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-gutter-desktop">
+<div class="max-w-3xl space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest">Семейный культурный гид / Сургут</span>
+<span class="text-surface-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase text-primary">Сезон 2024–2025</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">Куда сходить с детьми в Сургуте</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed pt-space-xs">
+          Спектакли театра кукол, интерактивные научные лаборатории, тихие мастер-классы и семейные киносеансы, отобранные с заботой об эстетическом развитии и комфорте родителей.
+        </p>
+</div>
+<!-- Quick Metrics Counters -->
+<div class="flex items-center gap-space-md shrink-0 pt-space-md lg:pt-0">
+<div class="bg-surface-container-lowest px-space-lg py-space-md rounded-xl shadow-sm flex flex-col justify-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Репертуар месяца</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs">32 события</span>
+<span class="font-body-sm text-body-sm text-primary">в 7 главных залах</span>
+</div>
+<div class="bg-surface-container px-space-lg py-space-md rounded-xl shadow-sm flex flex-col justify-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Возрастные рамки</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs">0+ до 14+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">градация по шкале Минкульта</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Precise Age & Date Filtering Interface -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<!-- Primary Tier: Age Bracket Filtering -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">child_care</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Возраст ребенка:</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs md:pb-0 scrollbar-none flex-wrap">
+<button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors" type="button">
+            Все возрасты
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+            Малыши 0–3 года
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+            Дошкольники 4–6 лет
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+            Младшие школьники 7–10 лет
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+            Подростки 11–14 лет
+          </button>
+</div>
+</div>
+<!-- Secondary Tier: Formats and Timings -->
+<div class="pt-space-md flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<!-- Event Format Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs xl:pb-0 scrollbar-none">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant mr-space-xs shrink-0">Формат:</span>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shrink-0" type="button">Все форматы</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">Кукольный театр &amp; сказки</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">Мастер-классы &amp; ремесло</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">Интерактивная наука</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">Мультфильмы &amp; кино</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">Музыкальные утренники</button>
+</div>
+<!-- Date Fast Presets -->
+<div class="flex items-center gap-space-xs shrink-0 pt-space-xs xl:pt-0">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant mr-space-xs">Когда:</span>
+<button class="px-space-sm py-1 rounded bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">Сегодня</button>
+<button class="px-space-sm py-1 rounded bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">Завтра</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">В эти выходные</button>
+<button class="px-space-sm py-1 rounded bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">Школьные каникулы</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Curated Spotlight / Выбор редакции и педагогов -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Кураторская подборка</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Выбор родителей и педагогов на этой неделе</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md md:text-right">
+        Спектакли и воркшопы с максимальным зрительским рейтингом, проверенной посадкой в зале и бережным отношением к детскому вниманию.
+      </p>
+</div>
+<!-- Editorial Spotlight 3-Card Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Spotlight Item 1 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Intimate magical puppet theater performance of Russian fairy tale Silver Hoof on stage, warm theatrical lighting, cozy wooden village set, hand-crafted puppets with amber glow, high culture mood for children, photographed in documentary style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdN9b5xM5EcjOXyKJJs3SMJDOj5X4daB3Zs6cg0EZq0NBoU72FhMX1EEx-2bY4230__J66aE2m4v_CsHHB4prmE9q5kAcCEF85Wxyk0KjMW45c0VdulLv-cUzNm7W82EVdCl_5PzS9z3HYduvFDu5HIfi2hN5yAgxZDm2I_ASKXUkL-Hnqifv1urM1rqiCsDqJNX-1VGuI2HaToJ3BrJ6t70oOvnfz6QQ6ENJAJPeuaFTe1NZYVZdZNg"/>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">4+</span>
+<span class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Хит сезона</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-sm">
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>26 октября, СБ · 11:00 и 14:00</span>
+<span class="text-on-surface-variant font-body-sm">45 мин</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Спектакль «Серебряное копытце»
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Театр актера и куклы «Петрушка». Тёплая уральская сказка П. Бажова с живой музыкой на колокольчиках и уютным рассадником с подушками для самых маленьких.
+            </p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Стоимость билета</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">от 450 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-primary text-on-primary rounded font-label-lg text-label-lg transition-colors" type="button">
+            Купить билет
+          </button>
+</div>
+</article>
+<!-- Spotlight Item 2 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Children in modern science center laboratory museum participating in safe interactive physics and chemistry experiment, glowing liquid flasks, smoke ring vortex, excited curious faces, warm ambient studio lighting, high resolution documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATdsgKKgFimpRdM6chtCqgsny1_fwZDyMZtmEB_enQQgB1MQ1R33iAcyXjLOAHF95obvqsXeTQcvt4x1mrjGGoVIJolW1CJEunRWLJyrN4_thN3kkqBoUKyKaInJFwutlJreCV61k45zjYnCBVd9cmhBxXvPfeXs95Mdd6Lq-RWtL6Ip-Ae26GSpATpKgh_gfOdN676nbjdihIZxK09ZqBwGQlKIo__U5KhPskJysFRlUurVxg2jbnuA"/>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">7+</span>
+<span class="px-2.5 py-1 rounded bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-wide">Наука &amp; Опыт</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-sm">
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>27 октября, ВС · 13:00 и 16:30</span>
+<span class="text-on-surface-variant font-body-sm">1 час 15 мин</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Интерактивное шоу «Магия физики и химии»
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Музейный центр СурГУ. 18 зрелищных экспериментов с жидким азотом, плазменными сферами и левитацией, где каждый ребенок лично проводит опыт в перчатках исследователя.
+            </p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Стоимость билета</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">от 600 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-primary text-on-primary rounded font-label-lg text-label-lg transition-colors" type="button">
+            Купить билет
+          </button>
+</div>
+</article>
+<!-- Spotlight Item 3 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Children and parents hands crafting fantasy ceramic mythical woodland creature figurines from natural clay in aesthetic modern pottery workshop studio with warm daylight and wooden workbench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjWwAnbdPW_6odGVArCz1m6Ew8q__tO-1ZG6Nnip4UXZxVcoPGvEAFdvqyFOuLoLMpJLh_tmoi62RHTPujbqEivARTdHUfwDAPutsLswsvTbctZexZbxRzKKVbDqkt1tYDJFVj9Y6ToALIvOxrT0OyBoKZ3u31MYQ7jB8QlCZg_PARqpcVZN-NghYsuzGpOd5Pbv0Qy3J6-KO_j5vD9rh-30gulUmVps8C6eQU5Vu3lvdzeIcWOkJmvg"/>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">6+</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wide">Малый зал</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-sm">
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>02 ноября, СБ · 12:00</span>
+<span class="text-on-surface-variant font-body-sm">Группа 10 чел.</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Большой воркшоп «Лепим сказочных зверей»
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Культурный центр «Порт». Авторский мастер-класс по ручной лепке из югорской глины с последующим муфельным обжигом и глазурированием готовой игрушки.
+            </p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Стоимость участия</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">800 ₽ <span class="font-body-sm font-normal text-on-surface-variant">(включая глину)</span></span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-primary text-on-primary rounded font-label-lg text-label-lg transition-colors" type="button">
+            Записаться
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 4: Main Curated Events Directory -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block mb-space-xs">Основная афиша</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Репертуар для детей и родителей</h2>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Сортировка:</span>
+<button class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors" type="button">
+<span>По ближайшей дате</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Event Cards Grid (8 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Event Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Exquisite puppet theater stage featuring Pushkin's Tale of Tsar Saltan, miniature golden ship on ocean stage set, theatrical deep navy and warm gold lighting, artisanal craftmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6FTS7lX5rL2iU4ujQdKJJM1ZxaOwDYD33WzGRXu7RxEtTHTRyk0e69UGHnly6DMym3YPDpsBd4l0Y1jdMPIbtReZY79RtmwKj4ee-M-Ndb7aGdPZWWTbG2ynDDXx3NRmK9rC3prUQofTXgrgg0c7DI9w7H8bmekJJ9ono3VpPBrBUzst9lzq-Kf6T19PaC3vLmYs2fKgIwNzv-oo4I40GcCew2JnCtxzy7lPc4-1pfmeo4kNFJv1syQ"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">6+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Театр кукол</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">26 октября, СБ · 12:00</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Сказка о царе Салтане
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Театр актера и куклы «Петрушка»</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 400 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Toddlers and mothers sitting on soft rugs in acoustic concert hall listening to string quartet playing Mozart, light airy room, minimalist modern interior, warm soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_tPXmPPhTrLQQ0Op9Yz7mqw_sj5MaexZsuJLhtryevw9JthcQmspXcvYXwOgDb_2hK5p90GV8gtKxf4SXZh5iLT00jESPUj0bqq-hscvAy5ajxnr9JDVg7M82fQ3jsIaW8CoovkvoRYBlBaR5b7kA1ASFQE0wwpcaNa_wETylfqcNwdzQ3V2ODJvh0sqBPx4mZfLxXIfh_avQjANV7UNWEetElxG9Ba7RQjeaN1-lXAj4ZM8QwS3cuA"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">0+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Бэби-концерт</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">27 октября, ВС · 10:30</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Музыка в ползунках: Моцарт
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Сургутская филармония (Малый зал)</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 500 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Atmospheric planetarium dome projection of the Northern constellations, aurora borealis and polar stars, high resolution deep space imagery viewed by family looking upwards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJm8661djNBE7zlUIddVDwEMPHTp9usCX4gZZAG2ZmFetDck9w-uRchKlvo-SE4MUJynu6FjSzI8yMLGvWqETeXVxTUdJku8Wu8LNspyih1IL0vutXGWjgUXAztVt9PVLiKeapZ78NCYt0eebcBI2FBjQP1DqWLSoUKuhsj5d7HVMuT-8il0TtMPN3B5V1_GS-uVA_PFqOvVkWlqQiK0HxXqCK0oMCHu4RcTZ4JDhpJXQ7aM_Mx5mfMw"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">6+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Планетарий</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">28 октября, ПН · 15:00</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Тайны Полярного сияния
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Сургутский планетарий</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 350 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Children holding magnifying glasses and brush tools examining Siberian mammoth bone fossils and ancient petroglyphs in interactive museum archeological sand box, warm educational atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCMS6XQfQEPecB0JqfieMD09exaAeFjuLC018hC_0CG3F_e23Ul1W9tseklWoLf_bHfXeFBa_QS7b9x8KApVRQ_tyhjP1Tqsvw777cNj0U70nOUM5X6673EfXGCt3Zmq977WOhMRppVlG2GNwvy7eb8yzqZpUM4H1j4ZBmKnF9PbYxqc6fSt3TwgTbT5F2qyuIfN_LOPWH7o8sQNVPntJUL_U3QVkmlHsBG2EzqDhXjIuwEnChElIxfQ"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">7+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Квест-лаборатория</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">29 октября, ВТ · 14:00</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Школа юного археолога Югры
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Краеведческий музей Сургута</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 450 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Animation poster still of enchanted autumn forest with playful woodland creatures and luminous fireflies, European independent animation aesthetic, gentle fairy tale art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfpPEHBTh85TBig9ndBgdKaeM5cxeeclCHMTh8sSqOFI6NVvrnakX3vrIYHziMqtGMk50PHNNDvkGDQZ3sfTGxZRYzE5fY3JqamGropTOy-xiYNDLkLKVR_SCuasE-gD-QBjxrsTYqmc3j3JyXvdxG0OhAf2WJuCvztfju_W8PHq0kzPYJzR3i6yfGGb_14l4SukaOnrT7N1BxE8iuRxsxzX0OilvK3DLlWys-Z4pdD7z1Bpzu04j6xA"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">6+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Анимация</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">30 октября, СР · 11:30</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Приключения в волшебном лесу
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Синема Парк «Сургут Сити Молл»</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 320 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Dramatic theatrical winter stage setting with crystal ice sculptures and glittering snow queen silhouettes, gentle fairy tale lighting in teal and coral undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBinTT125mH1aPzPu_ukF23uhnVC_dsn5H1DzBTRZpTrqJAspoCuVFzoFcLrLVYiXSXPsvfDjZQt7jvddtEjfrMw8JxWRTQMffLkKgiIPVT1kztUniRxlz-FJugVLSY_yxY-9nN5_Q5hqQCS3GMAEu2fTHMQmbzXruW0eKMPiCbxZB1lyWtA5yGcPy2ljt7TiM7sDRamH_Hi12O6VKjh5OL2cwjMRo8sIh4MjohZq_i-162OdDu5ms6Zg"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">5+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Музыкальная сказка</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">01 ноября, ПТ · 17:00</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Тайна ледяного кристалла
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>МАУ «Сургутская филармония»</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 550 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 7 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Children watercolor art class in bright airy art museum gallery, wooden easels, colorful palette knives, smiling creative children learning painterly composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrlWK2gDqkyZNd6MSqQXCLK84-BOaiLM42mmyrKZTpB3WTWzT9nB1Ehb_tJ8ELndc5V6Dg4YV7_On25voX-U3qDciPtATWKyHM-Do_YsapdGn0VlcbnRV4erYHOIpu4WwhLogypifVkcsDkl9kHVoMyhdb2xREGI9gbxAhZiHz0bZ0guSErscWDII2UC9qXjdCf0wQXOn7gr5wZt4nvjYe3Ngh2RO3Yw9UUXn_KjYPMCNa12xDsankmA"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">8+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Живопись</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">02 ноября, СБ · 15:00</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Юный импрессионист: Северный пейзаж
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Сургутский художественный музей</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 400 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+<!-- Event Card 8 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+<div>
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out" data-alt="Interactive toddler shadow puppet theater play with white translucent screen, silhouettes of fairy animals, soft glowing amber light behind fabric, calming sensorial environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlGvlJo_qP8RPJ1yFv53caChXDcvk5H0vTGLrpqcqyCnbO1isxF_FD5YtApYs-XZSyXU7JXAUA5WkXIvQ53-tAnMJ6fiRre_zlOiwEJlgp15k5HYxdKX5HRmNVE9UleeKzTV5CiuYb1zQjNDk5GeZP1r7sxV9XwnA4SsB72N0Dtfy70JvAYPIIR-GcTHogyFciBOE2EcGHIj8uNr42H7b7WyW5VR-y_j4l1yLxzXnF8Giempq4-4NyLA"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 backdrop-blur font-label-caps text-label-caps text-on-surface">1+</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Бэби-театр</span>
+</div>
+<button aria-label="Сохранить в закладки" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<p class="font-label-md text-label-md text-primary font-semibold">03 ноября, ВС · 10:00 и 11:30</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Театр теней «Сны маленького медведя»
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>КЦ «Порт»</span>
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">от 450 ₽</span>
+<button class="px-space-md py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded font-label-md text-label-md transition-colors" type="button">
+            Билеты
+          </button>
+</div>
+</article>
+</div>
+<!-- Pagination & Catalog Expansion -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-variant">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+        Показано 8 из 32 детских событий в Сургуте
+      </span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-space-sm bg-surface-container hover:bg-surface-variant text-on-surface rounded font-label-lg text-label-lg transition-colors" type="button">
+          Показать еще 12 спектаклей
+        </button>
+</div>
+</div>
+</section>
+<!-- Section 5: City Spaces Guide / Семейные пространства Сургута -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block mb-space-xs">Инфраструктура &amp; Культура</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Семейные локации и детские пространства</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+        Площадки Сургута, оборудованные для комфортного посещения с детскими колясками, зонами отдыха и безопасной средой.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Space Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">theater_comedy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Театр актера и куклы «Петрушка»</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Специальные адаптивные подушки для кресел, отсутствие крутых ступеней, отдельный малый зал для бэби-спектаклей на полу.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-variant space-y-space-xs">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Адрес &amp; Особенность</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">ул. Энгельса, 11 (МАУ КДЦ)</p>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">stroller</span>
+<span>Пандус и гардероб для колясок</span>
+</div>
+</div>
+</div>
+<!-- Space Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Планетарий и обсерватория</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Полнокупольные цифровые программы с эффектом погружения. Регулируемые кресла с отклоняемой спинкой для маленьких зрителей.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-variant space-y-space-xs">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Адрес &amp; Особенность</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">пр. Ленина, 1 (Здание СурГУ)</p>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Научные сеансы от 5 лет</span>
+</div>
+</div>
+</div>
+<!-- Space Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Арт-лаборатория КЦ «Порт»</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Камерное выставочное пространство и свободная творческая мастерская: керамика, линогравюра, уютные кинопоказы авторской анимации.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-variant space-y-space-xs">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Адрес &amp; Особенность</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">ул. Майская, 10</p>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">family_restroom</span>
+<span>Зона отдыха и чайный стол</span>
+</div>
+</div>
+</div>
+<!-- Space Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Детский центр Музея Югры</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Интерактивный зал с тактильными экспонатами: традиционные берестяные игрушки обских угров, реконструкции чума и раскопок.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-variant space-y-space-xs">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Адрес &amp; Особенность</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">ул. 30 лет Победы, 21/2</p>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>Экспонаты можно трогать</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Parents Handbook / Памятка для родителей -->
+<section class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-xl mb-space-xl">
+<div class="bg-surface-container rounded-xl p-space-lg lg:p-space-xl">
+<div class="max-w-2xl mb-space-lg space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Полезная информация</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Памятка для родителей перед посещением</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Простые правила и городские стандарты культурных учреждений Сургута для спокойного и вдохновляющего семейного похода.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">airline_seat_recline_normal</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Дети до 3 лет</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            В большинстве муниципальных залов (Филармония, ДИ Нефтяник) вход бесплатный без предоставления отдельного кресла (на руках у родителя).
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Пушкинская карта</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Для подростков от 14 лет билеты на спектакли театров и выставки можно оплачивать номиналом карты без затрат из семейного бюджета.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">baby_changing_station</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Комфорт малышей</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Театр кукол «Петрушка» и КЦ «Порт» снабжены пеленальными столиками и зонами для кормления в тихих фойе.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Прибытие в зал</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Рекомендуем приходить за 25 минут до начала: дети успевают привыкнуть к освещению и пространству без лишней суеты перед третьим звонком.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant pt-space-xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col justify-between pr-gutter-desktop"><div class="space-y-space-sm"><div class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight">АФИША</div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Культурный гид и удобный сервис бронирования билетов на главные события в Сургуте.</p></div><div class="mt-space-lg"><div class="inline-flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span><span class="font-label-md text-label-md uppercase tracking-wider">Сургут, ХМАО-Югра</span></div></div></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Категории</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" data-path="theater" href="#">Театр и опера</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="concerts" href="#">Концерты и музыка</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="cinema" href="#">Премьеры кино</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="exhibitions" href="#">Музеи и выставки</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="kids" href="#">Детские программы</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">О проекте</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" data-path="about" href="#">О сервисе</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="venues" href="#">Площадки и залы</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="editorial" href="#">Журнал редакции</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="contacts" href="#">Контакты</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Помощь &amp; Партнерам</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" data-path="organizers" href="#">Организаторам</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="ticket-refund" href="#">Возврат билетов</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="faq" href="#">Частые вопросы</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="terms" href="#">Правила сервиса</a></li></ul></div></div><div class="pt-space-lg border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2025 АФИША. Сервис бронирования билетов на культурные события в Сургуте. Тестовые примеры событий.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Конфиденциальность</a><a class="hover:text-on-surface transition-colors" data-path="user-agreement" href="#">Пользовательское соглашение</a></div></div></div></footer>
+</body></html>

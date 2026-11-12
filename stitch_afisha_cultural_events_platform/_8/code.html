@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#dbc1bb","surface-variant":"#e4e2de","on-background":"#1b1c1a","on-surface-variant":"#55423f","surface-tint":"#994533","secondary-container":"#e4e2e1","on-secondary":"#ffffff","on-error-container":"#93000a","surface-container-highest":"#e4e2de","on-primary-fixed-variant":"#7b2e1e","inverse-primary":"#ffb4a5","inverse-on-surface":"#f2f0ec","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#c8c6c5","surface-dim":"#dbdad6","on-secondary-container":"#656464","surface":"#fbf9f5","surface-container":"#efeeea","tertiary-container":"#2eab92","tertiary-fixed-dim":"#66dabf","primary-container":"#e27d68","on-primary-container":"#5e190b","tertiary-fixed":"#84f7da","primary-fixed":"#ffdad3","secondary":"#5f5e5e","on-secondary-fixed":"#1b1c1c","primary":"#994533","surface-bright":"#fbf9f5","secondary-fixed":"#e4e2e1","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005143","surface-container-low":"#f5f3ef","on-tertiary-container":"#00382e","on-tertiary":"#ffffff","surface-container-high":"#eae8e4","tertiary":"#006b59","error":"#ba1a1a","on-tertiary-fixed":"#00201a","on-error":"#ffffff","on-primary":"#ffffff","outline":"#88726e","inverse-surface":"#30312e","on-surface":"#1b1c1a","on-secondary-fixed-variant":"#474746","primary-fixed-dim":"#ffb4a5","background":"#fbf9f5","on-primary-fixed":"#3e0500"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.25rem","margin-desktop":"3rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"1rem","margin-tablet":"2rem","space-md":"1rem","space-xl":"2.5rem","gutter-desktop":"2rem"},"fontFamily":{"headline-lg":["Manrope"],"display-hero-mobile":["Manrope"],"body-lg":["Manrope"],"headline-md":["Manrope"],"headline-lg-mobile":["Manrope"],"body-sm":["Manrope"],"label-md":["Manrope"],"label-caps":["Manrope"],"label-lg":["Manrope"],"headline-sm":["Manrope"],"display-hero":["Manrope"],"body-md":["Manrope"]},"fontSize":{"headline-lg":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["17px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-surface-variant"><div class="h-20 max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="events-catalog" href="#"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">АФИША</span></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><button class="hidden sm:flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-label-lg text-label-lg">Сургут</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b-2 border-primary pb-1 -mb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-catalog" href="#">Все события</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="theater" href="#">Театр</a><a aria-current="page" class="transition-colors text-primary font-semibold border-b-2 border-primary pb-1 -mb-1" data-path="concerts" href="#">Концерты</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cinema" href="#">Кино</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="exhibitions" href="#">Выставки</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids" href="#">Детям</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Поиск событий" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Избранное" class="relative w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" data-path="favorites" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></a><a class="flex items-center gap-space-sm pl-space-xs py-space-xs pr-space-sm rounded-lg hover:bg-surface-container transition-colors group" data-path="profile" href="#"><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary group-hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">person</span></span><span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors hidden xl:inline">Войти</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Intro -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-lg">
+<div class="space-y-space-sm max-w-2xl">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Сезон 2024 / 2025 • Музыкальная афиша
+          </div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight">
+            Концерты и музыка в Сургуте
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Симфонические вечера в филармонии, гастрольные туры рок-легенд, камерный джаз и современные электронные перформансы на главных сценах Югры.
+          </p>
+</div>
+<!-- Quick Metrics Counter (Editorial Style) -->
+<div class="flex items-center gap-space-lg bg-surface-container-lowest p-space-md rounded-xl shadow-sm self-start lg:self-auto">
+<div class="space-y-space-xs pr-space-md border-r-0">
+<div class="font-headline-md text-headline-md text-primary font-bold">48</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Событий в сезоне</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div class="space-y-space-xs pl-space-xs">
+<div class="font-headline-md text-headline-md text-tertiary font-bold">6</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Концертных залов</div>
+</div>
+</div>
+</div>
+<!-- Genre Category Chips -->
+<div class="w-full overflow-x-auto pb-space-xs scrollbar-none flex items-center gap-space-sm">
+<button class="genre-chip active px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-primary-container text-on-primary font-semibold shadow-sm shrink-0" data-genre="all" type="button">
+          Все концерты (48)
+        </button>
+<button class="genre-chip px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm shrink-0" data-genre="classic" type="button">
+          Классика и оркестр (16)
+        </button>
+<button class="genre-chip px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm shrink-0" data-genre="rock" type="button">
+          Рок и альтернатива (11)
+        </button>
+<button class="genre-chip px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm shrink-0" data-genre="jazz" type="button">
+          Джаз и блюз (8)
+        </button>
+<button class="genre-chip px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm shrink-0" data-genre="pop" type="button">
+          Эстрада и поп (9)
+        </button>
+<button class="genre-chip px-space-md py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm shrink-0" data-genre="electronic" type="button">
+          Электронная музыка (4)
+        </button>
+</div>
+</div>
+</section>
+<!-- Curated Spotlight: Main Headliners of the Month -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<div class="flex items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-space-xs">Выбор редакции</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface">
+            Главные хедлайнеры и премьеры месяца
+          </h2>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm">
+<button aria-label="Предыдущий" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm hover:bg-surface-container transition-colors" id="carousel-prev">
+<span class="material-symbols-outlined text-[20px]">west</span>
+</button>
+<button aria-label="Следующий" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm hover:bg-surface-container transition-colors" id="carousel-next">
+<span class="material-symbols-outlined text-[20px]">east</span>
+</button>
+</div>
+</div>
+<!-- Spotlight Bento Grid / Prominent Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Spotlight 1 -->
+<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Grand symphony orchestra performing in a warm mahogany concert hall under soft stage chandeliers, classical musicians playing violins and cellos in elegant black concert attire, atmospheric cinematic lighting in deep warm tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOQjo4dEHrOIU8GeES3zLt54K296LW0ChdL5KfqVFI9EnBp7ppcq0WSD0hUtdn-dpSp9Afz55jiSkDoUi-AtADiUcT4pZllXCrstBicNCwaO8nltMVw0lHQ4w0FcmOFCfmsYuUs4RqvrvBmCixJQww05VdAvB0ROKBx9eTj3YHwOfAbNB7CzhBXzkqAFncaCcy1aw83LSZI3scpvB_37Pj1Th7oiKIzTrgNBc5kMIQ_pNd5Nc7oPqHAg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-black/20"></div>
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-caps text-label-caps uppercase">Классика</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase">Премьера сезона</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-surface-container-lowest">
+<div class="font-label-md text-label-md text-inverse-primary uppercase tracking-wider mb-space-xs">28 Октября, 19:00</div>
+<h3 class="font-headline-sm text-headline-sm leading-tight text-surface-container-lowest drop-shadow-sm mb-space-xs">
+                Симфонический оркестр Сургутской филармонии
+              </h3>
+<p class="font-body-sm text-body-sm text-surface-variant line-clamp-1">Шедевры Рахманинова и Чайковского</p>
+</div>
+</div>
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Большой зал</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">от 1 200 ₽</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+              Купить
+            </button>
+</div>
+</article>
+<!-- Spotlight 2 -->
+<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Intimate Nordic jazz club ambiance featuring a tenor saxophonist and upright bass player bathed in deep blue and terracotta spotlighting, hazy cozy atmospheric club setting with vintage microphones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2sa4Pg9MqPWV0r9WWiLisV6Sibzso8JXZQV9mseyq03pJBRYWyoXhrpd5LAX1k4P8_K3tIznQ_uRzuQHgLdPoqbIuHtAI0Na9m7XmujluDLaHpOxeoWutlNob8qRZ1RV2lrxDI01xoJxPcrhU0IcnDXHf1gQVXxGI2HYgcXxRKidd-nn_qruzRTVPUjigW0R7SM1slgMV_6RuXY_kZwvDq4yBzlQ16L0Z5AiAihGANWhzrZXGuYr95A')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-black/20"></div>
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-caps text-label-caps uppercase">Джаз</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase">Гастроли</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-surface-container-lowest">
+<div class="font-label-md text-label-md text-inverse-primary uppercase tracking-wider mb-space-xs">31 Октября, 20:00</div>
+<h3 class="font-headline-sm text-headline-sm leading-tight text-surface-container-lowest drop-shadow-sm mb-space-xs">
+                Джазовый вечер «Polar Groove Quartet»
+              </h3>
+<p class="font-body-sm text-body-sm text-surface-variant line-clamp-1">Северный импровизационный джаз</p>
+</div>
+</div>
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Камерный зал филармонии</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">от 1 600 ₽</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+              Купить
+            </button>
+</div>
+</article>
+<!-- Spotlight 3 -->
+<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Acoustic rock concert setting with lead guitarist sitting on a high stool bathed in warm tungsten backlighting, wooden acoustic guitar close-up, dramatic shadows and smoke haze in an intimate venue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArSOHl2IVr8dAcVEGTNUtJCFr6UkueYhGET6MbfS2tI6aoJUMohbfyMxgwez9ahEmzxpug7zJNyeWirsjm0Ff8aOsLmFYXf-xaYKxVO8X-oYaTkjN92hXof8xdYSP8nBwsK4B6kS22888MoTrHQ9Du_W10QqPYfbfb-XMgnAUIZillzRPvzHsQhIi10USmrlLg_jE1hgb7EIh2FeYK6oIMgap-Sjii8RmswRC5r_doM_WTOOJz9XKBmA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-black/20"></div>
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-caps text-label-caps uppercase">Рок</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase">Акустика</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-surface-container-lowest">
+<div class="font-label-md text-label-md text-inverse-primary uppercase tracking-wider mb-space-xs">3 Ноября, 19:30</div>
+<h3 class="font-headline-sm text-headline-sm leading-tight text-surface-container-lowest drop-shadow-sm mb-space-xs">
+                Легенды русского рока в акустике
+              </h3>
+<p class="font-body-sm text-body-sm text-surface-variant line-clamp-1">Хиты «Кино», «ДДТ» и «Аквариума»</p>
+</div>
+</div>
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">РК «Вавилон»</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">от 1 800 ₽</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+              Купить
+            </button>
+</div>
+</article>
+<!-- Spotlight 4 -->
+<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Chamber ensemble musicians playing baroque instruments like harpsichord and baroque violins in a sunlit neoclassical gallery with tall arch windows and warm textured walls, artistic high key photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMTfk0n2GW04dsDg93mY5rwQY6wh3n8RveF1RZet6iNRhEw5AgjxZKMTvQds8ADj8POcg4qyM_6tGOfLGhB3eJK4O0W2bio_rpqJgnHq9HPgW8jF3LBsSxi0GbrbNxOtra-EnhBc8ebmTPi6ObWs55CXgeESe2Ec5mFgcEVl-IUDXO8Rm-aWTPiIn6b1iPRwpM4_kZf-VWZGxyagPw1xCYZwZjF_1Vlym17q556X0qiG1hnRdUwtzc9w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-black/20"></div>
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-caps text-label-caps uppercase">Барокко</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps uppercase">Эксклюзив</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-surface-container-lowest">
+<div class="font-label-md text-label-md text-inverse-primary uppercase tracking-wider mb-space-xs">10 Ноября, 18:00</div>
+<h3 class="font-headline-sm text-headline-sm leading-tight text-surface-container-lowest drop-shadow-sm mb-space-xs">
+                Времена года: Вивальди и Пьяццолла
+              </h3>
+<p class="font-body-sm text-body-sm text-surface-variant line-clamp-1">Камерный оркестр «Камерата Сибири»</p>
+</div>
+</div>
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Сургутский театр актера</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">от 1 500 ₽</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+              Купить
+            </button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Interactive Filtering & Sorting Bar -->
+<section class="w-full bg-surface-container-high py-space-lg sticky top-20 z-30 shadow-sm">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Left: Quick Date Presets -->
+<div class="flex items-center gap-space-xs overflow-x-auto scrollbar-none pb-space-xs lg:pb-0">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mr-space-xs hidden sm:inline">Дата:</span>
+<button class="date-chip active px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm whitespace-nowrap" type="button">Все дни</button>
+<button class="date-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Сегодня</button>
+<button class="date-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">В эти выходные</button>
+<button class="date-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Октябрь</button>
+<button class="date-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Ноябрь</button>
+</div>
+<!-- Center: Price Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto scrollbar-none pb-space-xs lg:pb-0">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mr-space-xs hidden sm:inline">Цена:</span>
+<button class="price-chip active px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm whitespace-nowrap" type="button">Любая цена</button>
+<button class="price-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">до 1 500 ₽</button>
+<button class="price-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">1 500 – 3 000 ₽</button>
+<button class="price-chip px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">от 3 000 ₽</button>
+</div>
+<!-- Right: Sort Dropdown & Pushkin Card filter -->
+<div class="flex items-center justify-between lg:justify-end gap-space-md pt-space-xs lg:pt-0">
+<label class="flex items-center gap-space-xs text-on-surface cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" id="pushkin-filter" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Пушкинская карта
+            </span>
+</label>
+<div class="relative inline-block">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-space-md pr-space-xl py-2 rounded-lg shadow-sm focus:outline-none cursor-pointer" id="sort-select">
+<option value="popular">Сначала популярные</option>
+<option value="date">По дате (ближайшие)</option>
+<option value="price-asc">По цене (сначала недорогие)</option>
+<option value="price-desc">По цене (сначала премиум)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">unfold_more</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Concerts Grid Section -->
+<section class="w-full py-space-xl bg-background">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<!-- Section subhead with active count -->
+<div class="flex items-center justify-between mb-space-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface">
+          Все концерты сезона
+          <span class="text-on-surface-variant font-normal text-headline-sm ml-space-xs">(24 доступно)</span>
+</h2>
+<div class="inline-flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+          Официальные билеты без наценки
+        </div>
+</div>
+<!-- Main Event Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="events-grid">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="classic" data-price="1200">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up of a concert grand piano being played on a softly illuminated wooden auditorium stage, warm moody golden lighting casting long poetic shadows on ivory keys, editorial concert hall photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwOCY0IhYGtSLVWu0xG8GeFuZmSQ0h3Ym3ratcoKZy_hB4EXjKn_Me12wRAkb2Mwsf1RlynqApOjM91wJZ-abjTTABrQHSrFh6Jib0PeGljUXAGyXEZYTgMW5F0EZxLZniTzWzsqLXOf_ek7B9P__waDh7BTyJBf0XLJ5x0hhAYd03zYmKQZigOn5tRpJ2Wm2OyAHyUdUv4mEvjLKALm3yA7SRkbCY7Rih6F1jHk5Zlw0rb8M3nQueRA"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">КЛАССИКА</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps shadow-sm">ПУШКИНСКАЯ КАРТА</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                25 Октября, пт, 19:00
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Симфония № 5 Чайковского: триумф драмы и надежды
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Сургутская филармония (Большой зал)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Дирижер — Михаил Кирхгофф. Шедевр мировой классики в исполнении симфонического оркестра в сопровождении видеоинсталляций.
+              </p>
+</div>
+<div class="pt-space-sm border-t-0 flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 1 200 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="rock" data-price="2200">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dynamic rock guitarist with vintage electric guitar performing against dramatic crimson backlight and stadium concert smoke, silhouettes of chanting crowd with raised hands, vibrant live stage concert aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyEYVtV2OU5VGFp9rVyhatL4DpgJWUxoZKiVU-aW-xMUl8X3Xgd912r0sq6UvhqT2YAZJ00ndQjzjeH-cL77RF6XolWAJrVWCTYTMiYvsweDYgUrrnlB9RYe_pTWIxbze_WI4WXdV6sY6_5t-ABXTFARxuQtG3d-xXKXu4ExCD3wOnsXCiaYFjEbZOnVcOA8GhqN0m4X23g5rcCx5sUIsLIN_cauohuxaf6LlCmA40ZX16azlmJCw4TA"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">РОК</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps shadow-sm">ХИТ СЕЗОНА</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                27 Октября, вс, 20:00
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Симфо-рок шоу: Metallica, Queen, Scorpions
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">РК «Вавилон» (Концерт-холл)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Мощный симбиоз струнных инструментов и перегруженных гитар. 50 артистов на одной сцене и взрывное световое шоу.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 2 200 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="jazz" data-price="900">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chic jazz trumpet player in crisp dark suit playing under focused warm amber spotlight, gentle haze, retro microphone, stylish moody jazz bar stage photography with rich shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp6rE4ea2J1eFvkKoeu1XIHlfPPjynwpo0xA_Id3m0IflaoBwawcH8HbXGXt8WmKVpuvcH7BbWU2GdYbFA18e8C1-lTHAyYz2RzU8YPvhVLF7krjkvcJGvB3404kw-Q6LW2EXOK1yfVZandPpwoPaRWifJG-dl7ZWUNifcB_gBSdWg5w_L5-ZZu01TmtS-MQkzTyFh0i_6o7OG-ocDzDIZDPOn2Ds-JXEgcxxD2MbhNDkImH-PT5cCHw"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">ДЖАЗ И БЛЮЗ</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                1 Ноября, пт, 19:30
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Осенний блюз и джаз 1930-х: От Гарлема до Чикаго
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Сургутская филармония (Малый зал)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Аутентичный свинг, баллады Луи Армстронга и Эллы Фицджеральд в исполнении ансамбля медных духовых.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 900 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="classic" data-price="800">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Harp soloist playing concert pedal harp in an ornate classical venue, delicate hands plucking golden harp strings, soft golden natural light filtering through sheer curtains, calm refined visual mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeQ3XpcuaGhHh2mUve8SYIQQLBXGfQLOlfUAIoXTfYAnepoBmPgvvDHF47i5mJ8ZAqelv-JKReOp0PJniEnbQdyPUu6F-sjwbiiv-LUZtirSHKuNgCEfiZRIzzQdo7tRk2gqgr3RYVarW1Cklnc-pDBgevEyLV17cSZBrip-kQe_42UA2AJgYc52iuYBD-ahUGzuw6yH-vy9hNZBpxLph3z52KdmYTPAtjWv0ZO0HUca72dPTuHRCJAA"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">КАМЕРНАЯ МУЗЫКА</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps shadow-sm">ПУШКИНСКАЯ КАРТА</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                4 Ноября, пн, 17:00
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Магия кельтской и классической арфы
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Сургутский художественный музей</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Уютный камерный концерт в окружении полотен классических живописцев. Прозвучат произведения Дебюсси и старинные баллады.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 800 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="pop" data-price="2800">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern pop vocal diva on a sleek concert arena stage, wearing an elegant sculptural silver gown, surrounded by lasers and cinematic stage lighting, stadium scale entertainment photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChwnztzgdrXK0CjBnEwihOhN_LYvZ_2OtFi8u7ARtVBi43gmRT9THO9o5g1S-gHYOjiS2IKMhj5i9OQlvR7-JvSnvfzqWpv84aK4KiHJ-bVvovuhShKnn24YlTymAfURTJoOcKqm9ZJzfR-ApR6bUtA3WcQWBs5KW9ahy1rWqf76TNMPXkByuXekoHYSa_Z5DGYkXUQcmABulkk6eLtB268oNTPJezGVd4OJ2bG6BtluE_R2pj2_W8jg"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">ЭСТРАДА</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps shadow-sm">ГАСТРОЛИ</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                9 Ноября, сб, 19:00
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Полина Гагарина: Шоу «Навсегда»
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Ледовый дворец спорта (Сургут)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Грандиозный стадионный тур с живым составом музыкантов, хореографическими номерами и ключевыми хитами за 15 лет.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 2 800 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group" data-genre="electronic" data-price="1500">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Electronic music live set with modular synthesizer racks, glowing LED meters and analog patch cables, ambient cyan and magenta reflections in an industrial brick warehouse setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyid312MClSLxidOsg6fj76hqNdyqh6IgER6IJgqUC0ycN8_uif7NMn_V9K-MRq8RnD-lEBg3Pxjq-fAzSr4CLsdNR0NACnd6mLq-Y4tGKaz6LdVwyoKWOLaEvzOihoL1NZ4WTVzzdtmBgrLRv5apICPOJeIoy7PXd2-tTE0LHLJAURlvwur889w_YmoYTNmSWOIEKWMBrbr1vzLRpbSmxz0Hi2eC02IThjf1Ov3s4tGKvhpyw4nCjg"/>
+<div class="absolute top-space-sm left-space-sm flex gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps text-on-surface shadow-sm">ЭЛЕКТРОНИКА</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps shadow-sm">LIVE SET</span>
+</div>
+<button aria-label="Добавить в избранное" class="absolute top-space-sm right-space-sm w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface flex items-center justify-center hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-primary mb-space-xs tracking-wider uppercase">
+                15 Ноября, пт, 22:00
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs line-clamp-2">
+                Северный эмбиент &amp; Модулярный лайв: «Aurora Sound»
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Креативный кластер «Станция»</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Погружающий трехмерный звук, генеративная графика на экранах и медитативная звуковая ткань аналоговых синтезаторов.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Стоимость</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">от 1 500 ₽</span>
+</div>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-surface-tint text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+                Купить билет
+              </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Показано 6 из 48 концертов в Сургуте
+        </p>
+<button class="w-full sm:w-auto px-space-xl py-space-md bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg rounded-xl transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>Загрузить еще концерты</span>
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Editorial Promo Section: Philharmonic Season Pass & Festivals -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Philharmony Pass Banner (Spans 7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg sm:p-space-xl flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10 max-w-lg space-y-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">confirmation_number</span>
+              Абонемент филармонии 2024/25
+            </div>
+<h3 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface leading-tight">
+              Культурный абонемент филармонии
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Формируйте личную программу из 4 или более концертов симфонической музыки и экономьте <strong class="text-on-surface font-semibold">до 25%</strong> от базовой стоимости билетов. Закрепленное место в Большом зале на весь сезон.
+            </p>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                Приоритетный выбор лучших мест в партере
+              </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                Бесплатная замена одного концерта в случае переноса
+              </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                Приглашение на закрытые репетиции с главным дирижером
+              </li>
+</ul>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<button class="px-space-xl py-space-md bg-primary hover:bg-surface-tint text-on-primary rounded-lg font-label-lg text-label-lg font-semibold transition-colors shadow-sm" type="button">
+                Выбрать абонемент
+              </button>
+<a class="font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors underline underline-offset-4" href="#">
+                Узнать условия программы
+              </a>
+</div>
+</div>
+<!-- Decorative subtle music score inline SVG -->
+<div class="absolute -right-12 -bottom-10 opacity-10 pointer-events-none text-on-surface">
+<svg fill="currentColor" height="340" viewbox="0 0 100 100" width="340">
+<path d="M10 20 H90 V22 H10 Z M10 35 H90 V37 H10 Z M10 50 H90 V52 H10 Z M10 65 H90 V67 H10 Z M10 80 H90 V82 H10 Z"></path>
+<circle cx="35" cy="50" r="8"></circle>
+<rect height="30" width="3" x="41" y="20"></rect>
+<circle cx="70" cy="35" r="8"></circle>
+<rect height="25" width="3" x="76" y="10"></rect>
+</svg>
+</div>
+</div>
+<!-- Season Festivals Announcement (Spans 5 cols) -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-lg sm:p-space-xl flex flex-col justify-between space-y-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest block mb-space-xs">Спецпроекты</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">
+              Фестивали сезона в Югре
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Масштабные музыкальные форумы с участием мировых солистов и театральных трупп.
+            </p>
+<div class="space-y-space-md">
+<!-- Festival Item 1 -->
+<div class="p-space-md bg-surface-container-lowest rounded-lg shadow-sm flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase">12 – 18 Ноября</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">«60-я параллель»</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ежегодный международный фестиваль искусств</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-1">arrow_forward</span>
+</div>
+<!-- Festival Item 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-lg shadow-sm flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase">5 – 8 Декабря</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Surgut Jazz Fest</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Современный джаз и фьюжн на 3 концертных сценах</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Нужна помощь в выборе мест?</span>
+<a class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider hover:underline" href="#">
+              Онлайн-гид
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Venue Directory Teaser -->
+<section class="w-full py-space-xl bg-background border-t-0">
+<div class="max-w-[1440px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop">
+<div class="mb-space-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+          Главные музыкальные залы Сургута
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Информация об акустике, схемах залов и удобствах для зрителей.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm">
+<span class="material-symbols-outlined">theater_comedy</span>
+<span>Сургутская филармония</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ул. Энгельса, 18 • Вместимость: 800 мест • Лучшая оркестровая акустика</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm">
+<span class="material-symbols-outlined">nightlife</span>
+<span>РК «Вавилон»</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ул. Профсоюзов, 55 • Концертный клуб с танцполом и фан-зоной</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm">
+<span class="material-symbols-outlined">stadium</span>
+<span>Ледовый дворец спорта</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Югорский тракт, 40 • Крупнейшая стадионная площадка региона</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Genre Filter Interactive Toggle
+  const genreChips = document.querySelectorAll('.genre-chip');
+  const cards = document.querySelectorAll('#events-grid article');
+
+  genreChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      genreChips.forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+      chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+
+      const selectedGenre = chip.getAttribute('data-genre');
+
+      cards.forEach(card => {
+        if (selectedGenre === 'all' || card.getAttribute('data-genre') === selectedGenre) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Price Filter Interactive Toggle
+  const priceChips = document.querySelectorAll('.price-chip');
+  priceChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      priceChips.forEach(c => {
+        c.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'font-semibold', 'shadow-sm');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-surface-container-lowest', 'text-on-surface', 'font-semibold', 'shadow-sm');
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    });
+  });
+
+  // Date Filter Interactive Toggle
+  const dateChips = document.querySelectorAll('.date-chip');
+  dateChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      dateChips.forEach(c => {
+        c.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant pt-space-xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col justify-between pr-gutter-desktop"><div class="space-y-space-sm"><div class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight">АФИША</div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Культурный гид и удобный сервис бронирования билетов на главные события в Сургуте.</p></div><div class="mt-space-lg"><div class="inline-flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span><span class="font-label-md text-label-md uppercase tracking-wider">Сургут, ХМАО-Югра</span></div></div></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Категории</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="theater" href="#">Театр и опера</a></li><li><a class="hover:text-primary transition-colors" data-path="concerts" href="#">Концерты и музыка</a></li><li><a class="hover:text-primary transition-colors" data-path="cinema" href="#">Премьеры кино</a></li><li><a class="hover:text-primary transition-colors" data-path="exhibitions" href="#">Музеи и выставки</a></li><li><a class="hover:text-primary transition-colors" data-path="kids" href="#">Детские программы</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">О проекте</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">О сервисе</a></li><li><a class="hover:text-primary transition-colors" data-path="venues" href="#">Площадки и залы</a></li><li><a class="hover:text-primary transition-colors" data-path="editorial" href="#">Журнал редакции</a></li><li><a class="hover:text-primary transition-colors" data-path="contacts" href="#">Контакты</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-on-surface mb-space-md tracking-wider">Помощь &amp; Партнерам</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="organizers" href="#">Организаторам</a></li><li><a class="hover:text-primary transition-colors" data-path="ticket-refund" href="#">Возврат билетов</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="#">Частые вопросы</a></li><li><a class="hover:text-primary transition-colors" data-path="terms" href="#">Правила сервиса</a></li></ul></div></div><div class="pt-space-lg border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 АФИША. Сервис бронирования билетов на культурные события в Сургуте.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Конфиденциальность</a><a class="hover:text-on-surface transition-colors" data-path="user-agreement" href="#">Пользовательское соглашение</a></div></div></div></footer></body></html>
